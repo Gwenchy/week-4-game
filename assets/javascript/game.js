@@ -48,7 +48,7 @@ $(document).ready(function () {
     playersArray.push(thirdPlayer);
     playersArray.push(fourthPlayer);
 
-    //  Restart game
+    // Restart game
 
     function startGame() {
         yourCharacter = false;
@@ -63,10 +63,9 @@ $(document).ready(function () {
     audio.play();
 
     // Choosing character process.
-    function slectContestants(event) {
-        event.preventDefaults();
-        var $this = $(this);
-
+    $(".thumbnail").on("click", function(){
+        $(".player").append(this);
         
-    }
+    });
+
 });
