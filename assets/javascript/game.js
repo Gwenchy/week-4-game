@@ -63,9 +63,14 @@ $(document).ready(function () {
     audio.play();
 
     // Choosing character process.
-    $(".thumbnail").on("click", function(){
-        $(".player").append(this);
-        
-    });
-
+    if (yourCharacter === false) {
+        $(".friend").on("click", function () {
+            $(".player").append(this);
+            $(yourCharacter = true)
+            $(".thumbnail friend").removeClass('friend').addClass('enemy');
+        });
+    }
+    else { 
+        $("#enemies").append(".enemy");
+    }
 });
