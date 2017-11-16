@@ -18,55 +18,58 @@
 
 <body background="assets/images/Background.png">
     <!-- Container where you choose the character to beging with. -->
-    <div class="container unpickedHolder">
-        <h1 class="text-center">Digimon RPG</h1>
+    <div class="container">
         <div class="row">
-            <div class="col-xs-9">
-                <div class="row">
-                    <div class="col-xs-3 wargreymon unpicked">
-                        <button class="thumbnail">Wargreymon
-                            <img class="images" src="assets/images/wargreymon.png" alt="Wargreymon">
-                            <h5 class="score">120</h5>
-                        </button>
-                    </div>
-                    <div class="col-xs-3 metalgarurumon unpicked">
-                        <button class="thumbnail">Metalgarurumon
-                            <img class="images" src="assets/images/metalgarurumon.png" alt="Metalgarurumon">
-                            <h5 class="score">160</h5>
-                        </button>
-                    </div>
-                    <div class="col-xs-3 omnimon unpicked">
-                        <button class="thumbnail">Omnimon
-                            <img class="images" src="assets/images/omnimon.png" alt="Omnimon">
-                            <h5 class="score">170</h5>
-                        </button>
-                    </div>
-                    <div class="col-xs-3 agumon unpicked">
-                        <button class="thumbnail">Agumon
-                            <img class="images" src="assets/images/agumon.png" alt="Agumon">
-                            <h5 class="score">100</h5>
-                        </button>
+        <div class="container unpickedHolder">
+            <h1 class="text-center">Digimon RPG</h1>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-3 wargreymon unpicked" data-name="Wargreymon">
+                            <button class="thumbnail">Wargreymon
+                                <img class="images" src="assets/images/wargreymon.png" alt="Wargreymon">
+                                <h5 class="score">120</h5>
+                            </button>
+                        </div>
+                        <div class="col-xs-3 metalgarurumon unpicked" data-name="Metalgarurumon">
+                            <button class="thumbnail">Metalgarurumon
+                                <img class="images" src="assets/images/metalgarurumon.png" alt="Metalgarurumon">
+                                <h5 class="score">160</h5>
+                            </button>
+                        </div>
+                        <div class="col-xs-3 omnimon unpicked" data-name="Omnimon">
+                            <button class="thumbnail">Omnimon
+                                <img class="images" src="assets/images/omnimon.png" alt="Omnimon">
+                                <h5 class="score">170</h5>
+                            </button>
+                        </div>
+                        <div class="col-xs-3 agumon unpicked" data-name="Agumon">
+                            <button class="thumbnail">Agumon
+                                <img class="images" src="assets/images/agumon.png" alt="Agumon">
+                                <h5 class="score">100</h5>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xs-3 border">
-                <!-- Game rules -->
-                <p>
-                    Choose a Digimon partner. Once you do, you will have to battle the remaining Digimon. Choose wisely. You will have to beat
-                    all 3 remaining Digimon without letting your HP reach 0. If your HP drops to 0 you loose. Your attack
-                    will multiply each time you attack. Good luck and have fun.
-                </p>
-
+                <div class="row border">
+                    <!-- Game rules -->
+                    <p>
+                        Choose a Digimon partner. Once you do, you will have to battle the remaining Digimon. Choose wisely. You will have to beat
+                        all 3 remaining Digimon without letting your HP reach 0. If your HP drops to 0 you loose. Your attack
+                        will multiply each time you attack. Good luck and have fun.
+                    </p>
+                </div>
             </div>
         </div>
         <!-- Section where the characters will move to once selected. -->
-        <div class="col-md-12 row player">
+        <div class="row player">
             <h3>Your Character</h3>
         </div>
-        <div class="col-md-12 enemies">
+        <div class="row enemies">
             <h3>Enemies Available to Attack</h3>
         </div>
-        <div class="col-md-12 row fight">
+        <div class="row fight">
             <h3>Fight Section </h3>
         </div>
         <div class="row attack">
