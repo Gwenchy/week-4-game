@@ -55,6 +55,7 @@ $(document).ready(function () {
         yourEnemies = false;
         yourDefender = false;
     };
+    startGame();
 
     // Background music
 
@@ -62,15 +63,15 @@ $(document).ready(function () {
 
     audio.play();
 
-    // Choosing character process.
-    if (yourCharacter === false) {
-        $(".friend").on("click", function () {
-            $(".player").append(this);
-            $(yourCharacter = true)
-            $(".thumbnail friend").removeClass('friend').addClass('enemy');
-        });
-    }
-    else { 
-        $("#enemies").append(".enemy");
-    }
+    $(".unpickedHolder").on("click",".unpicked" ,function () {
+        $(".enemies").append($(".unpicked"));
+        $(".unpicked").removeClass("unpicked").addClass("enemy");
+        $(this).addClass("picked").removeClass("enemy");
+        $(".player").append($(this));
+    });
+    $(".enemies").on("click",".enemy",function () {
+        $(".fight").append($(this));
+        $(".enemies").hide();
+        
+    })
 });

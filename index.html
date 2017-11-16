@@ -18,34 +18,34 @@
 
 <body background="assets/images/Background.png">
     <!-- Container where you choose the character to beging with. -->
-    <div class="container">
+    <div class="container unpickedHolder">
         <h1 class="text-center">Digimon RPG</h1>
         <div class="row">
             <div class="col-xs-9">
                 <div class="row">
-                    <div class="col-xs-3 wargreymon">
-                        <a href="#" class="thumbnail friend">Wargreymon
+                    <div class="col-xs-3 wargreymon unpicked">
+                        <button class="thumbnail">Wargreymon
                             <img class="images" src="assets/images/wargreymon.png" alt="Wargreymon">
                             <h5 class="score">120</h5>
-                        </a>
+                        </button>
                     </div>
-                    <div class="col-xs-3 metalgarurumon">
-                        <a href="#" class="thumbnail friend">Metalgarurumon
+                    <div class="col-xs-3 metalgarurumon unpicked">
+                        <button class="thumbnail">Metalgarurumon
                             <img class="images" src="assets/images/metalgarurumon.png" alt="Metalgarurumon">
                             <h5 class="score">160</h5>
-                        </a>
+                        </button>
                     </div>
-                    <div class="col-xs-3 omnimon">
-                        <a href="#" class="thumbnail friend">Omnimon
+                    <div class="col-xs-3 omnimon unpicked">
+                        <button class="thumbnail">Omnimon
                             <img class="images" src="assets/images/omnimon.png" alt="Omnimon">
                             <h5 class="score">170</h5>
-                        </a>
+                        </button>
                     </div>
-                    <div class="col-xs-3 agumon">
-                        <a href="#" class="thumbnail friend">Agumon
+                    <div class="col-xs-3 agumon unpicked">
+                        <button class="thumbnail">Agumon
                             <img class="images" src="assets/images/agumon.png" alt="Agumon">
                             <h5 class="score">100</h5>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -60,39 +60,33 @@
             </div>
         </div>
         <!-- Section where the characters will move to once selected. -->
-        <div class="row">
-                <h3 class="col-md-3 player">Your Character</h3>
-              </div>
-              <div class="row">
-                <h3 class="enemies">Enemies Available to Attack</h3>
-              </div>
-              
-              <div class="row">
-                <h3 class="fight">Fight Section </h3>
-              </div>
-              <div class="row attackRow">
-                <button class="attack">Attack</button>
-              </div>
-              <div class="row defender-row">
-                <h3 class="defender">Defender</h3>
-              </div>
-              <p class="playerAttacks"></p>
-              <p class="defenderAttacks"></p>
-              <p class="lost won blink"></p>
-              <div class="row restartRow">
-                <button id="button" class="btn btn-warning clear" value='Refresh Page restart' onClick="window.location.reload()"><p>Restart</p></button>
-              </div>
-              <div class="col-md-9 log">Log</div>
-
-
+        <div class="col-md-12 row player">
+            <h3>Your Character</h3>
+        </div>
+        <div class="col-md-12 enemies">
+            <h3>Enemies Available to Attack</h3>
+        </div>
+        <div class="col-md-12 row fight">
+            <h3>Fight Section </h3>
+        </div>
+        <div class="row attack">
+            <button>Attack</button>
+        </div>
+        <div class="row defender">
+            <h3>Defender</h3>
+        </div>
+        <p class="playerAttacks"></p>
+        <p class="defenderAttacks"></p>
+        <p class="lost won blink"></p>
+        <div class="row restartRow">
+            <button id="button" class="btn btn-warning clear" value='Refresh Page restart' onClick="window.location.reload()">
+                <p>Restart</p>
+            </button>
+        </div>
+        <div class="col-md-9 log">Log</div>
     </div>
     <!-- Container where the enemies will be displayed. -->
-    <div class="container" id="enemySection">
 
-    </div>
-    <div class="container" id="battle">
-
-    </div>
     <!-- Javascript link. -->
     <script src="assets/javascript/game.js"></script>
 </body>
